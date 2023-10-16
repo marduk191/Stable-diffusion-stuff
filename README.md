@@ -1,5 +1,6 @@
 
-![_3f708725-3e60-43df-bbe0-ef667045b468-gigapixel-art-scale-1_00x](https://github.com/marduk191/Stable-diffusion-stuff/assets/1769686/17898e50-4696-48f2-b525-d7af120a7936)
+
+![_4ab2e2b0-b709-4a9a-8235-c1339e0d0858](https://github.com/marduk191/Stable-diffusion-stuff/assets/1769686/cff90e5a-c777-482f-a165-3901537c5516)
 
 
 # Stable-diffusion-stuff
