@@ -1,0 +1,711 @@
+{
+  "last_node_id": 59,
+  "last_link_id": 42,
+  "nodes": [
+    {
+      "id": 36,
+      "type": "LoRA Stacker",
+      "pos": [
+        21,
+        48
+      ],
+      "size": {
+        "0": 315,
+        "1": 178
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "lora_stack",
+          "type": "LORA_STACK",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LORA_STACK",
+          "type": "LORA_STACK",
+          "links": [
+            34
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoRA Stacker"
+      },
+      "widgets_values": [
+        "simple",
+        2,
+        "xl_more_art-full_v1.safetensors",
+        1,
+        1,
+        1,
+        "tools\\add-detail-xl.safetensors",
+        1.2,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1
+      ],
+      "color": "#222233",
+      "bgcolor": "#333355",
+      "shape": 1
+    },
+    {
+      "id": 34,
+      "type": "Efficient Loader",
+      "pos": [
+        688,
+        58
+      ],
+      "size": {
+        "0": 383.0896911621094,
+        "1": 580.4481811523438
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "lora_stack",
+          "type": "LORA_STACK",
+          "link": 34
+        },
+        {
+          "name": "cnet_stack",
+          "type": "CONTROL_NET_STACK",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            28
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "CONDITIONING+",
+          "type": "CONDITIONING",
+          "links": [
+            29
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "CONDITIONING-",
+          "type": "CONDITIONING",
+          "links": [
+            30
+          ],
+          "shape": 3,
+          "slot_index": 2
+        },
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            31
+          ],
+          "shape": 3,
+          "slot_index": 3
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            32
+          ],
+          "shape": 3,
+          "slot_index": 4
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": null,
+          "shape": 3,
+          "slot_index": 5
+        },
+        {
+          "name": "DEPENDENCIES",
+          "type": "DEPENDENCIES",
+          "links": null,
+          "shape": 3,
+          "slot_index": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Efficient Loader"
+      },
+      "widgets_values": [
+        "Kitchen_Sink_Base_Hermit.safetensors",
+        "Baked VAE",
+        -1,
+        "None",
+        1,
+        1,
+        "Album Cover, in the style of Grunge Art, Creative, Artistic, Expressive, Imaginative, Aesthetic, Harmonious, Captivating, Evocative, Dynamic, Iconic, Distorted, Reality, Chaos, Rebellion, Raw, Desolation, Grit, Urban, Melancholy, Angst, in the style of [Raymond Pettibon, Jeremiah Ketner, Brian M. Viveros, Esao Andrews, Margaret Keane]",
+        "",
+        "none",
+        "comfy",
+        1344,
+        960,
+        1
+      ],
+      "color": "#222233",
+      "bgcolor": "#333355",
+      "shape": 1
+    },
+    {
+      "id": 15,
+      "type": "PreviewImage",
+      "pos": [
+        1083,
+        40
+      ],
+      "size": {
+        "0": 810,
+        "1": 607
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 37,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 58,
+      "type": "Image Save",
+      "pos": [
+        737,
+        683
+      ],
+      "size": {
+        "0": 312.1820068359375,
+        "1": 346
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 42
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Image Save"
+      },
+      "widgets_values": [
+        "[time(%Y-%m-%d)]",
+        "[time(%Y-%m-%d)]_marduk191",
+        "_",
+        4,
+        "true",
+        "png",
+        100,
+        "true",
+        "false",
+        "true",
+        "true",
+        "true",
+        "true"
+      ]
+    },
+    {
+      "id": 59,
+      "type": "Save Image w/Metadata",
+      "pos": [
+        20,
+        563
+      ],
+      "size": {
+        "0": 407.8817443847656,
+        "1": 485.9999694824219
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 1,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Save Image w/Metadata"
+      },
+      "widgets_values": [
+        "%time_%seed",
+        "",
+        "png",
+        20,
+        8,
+        "1.5\\afgbw1_ArtDnd.safetensors",
+        "euler",
+        "normal",
+        "unknown",
+        "unknown",
+        0,
+        512,
+        512,
+        true,
+        100,
+        0,
+        "%Y-%m-%d-%H%M%S"
+      ]
+    },
+    {
+      "id": 57,
+      "type": "HighRes-Fix Script",
+      "pos": [
+        20,
+        279
+      ],
+      "size": [
+        321.4610900878906,
+        250
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "script",
+          "type": "SCRIPT",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "SCRIPT",
+          "type": "SCRIPT",
+          "links": [
+            41
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "HighRes-Fix Script"
+      },
+      "widgets_values": [
+        "latent",
+        "(use same)",
+        "nearest-exact",
+        "001_classicalSR_DF2K_s64w8_SwinIR-M_x8.pth",
+        1.35,
+        true,
+        -1,
+        null,
+        12,
+        0.7000000000000001,
+        1,
+        false,
+        "control_v11e_sd15_ip2p.pth",
+        1,
+        "CannyEdgePreprocessor",
+        false
+      ],
+      "color": "#443322",
+      "bgcolor": "#665533",
+      "shape": 1
+    },
+    {
+      "id": 43,
+      "type": "KSampler (Efficient)",
+      "pos": [
+        351,
+        51
+      ],
+      "size": {
+        "0": 325,
+        "1": 586
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 28
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 29
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 30
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 31
+        },
+        {
+          "name": "optional_vae",
+          "type": "VAE",
+          "link": 32
+        },
+        {
+          "name": "script",
+          "type": "SCRIPT",
+          "link": 41,
+          "slot_index": 5
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "CONDITIONING+",
+          "type": "CONDITIONING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "CONDITIONING-",
+          "type": "CONDITIONING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": null,
+          "shape": 3,
+          "slot_index": 3
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": null,
+          "shape": 3,
+          "slot_index": 4
+        },
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            37,
+            42
+          ],
+          "shape": 3,
+          "slot_index": 5
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSampler (Efficient)"
+      },
+      "widgets_values": [
+        475037523592877,
+        241526149527497,
+        20,
+        9.5,
+        "euler",
+        "normal",
+        1,
+        "auto",
+        "true"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159",
+      "shape": 1
+    }
+  ],
+  "links": [
+    [
+      28,
+      34,
+      0,
+      43,
+      0,
+      "MODEL"
+    ],
+    [
+      29,
+      34,
+      1,
+      43,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      30,
+      34,
+      2,
+      43,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      31,
+      34,
+      3,
+      43,
+      3,
+      "LATENT"
+    ],
+    [
+      32,
+      34,
+      4,
+      43,
+      4,
+      "VAE"
+    ],
+    [
+      34,
+      36,
+      0,
+      34,
+      0,
+      "LORA_STACK"
+    ],
+    [
+      37,
+      43,
+      5,
+      15,
+      0,
+      "IMAGE"
+    ],
+    [
+      41,
+      57,
+      0,
+      43,
+      5,
+      "SCRIPT"
+    ],
+    [
+      42,
+      43,
+      5,
+      58,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {},
+  "version": 0.4
+}
