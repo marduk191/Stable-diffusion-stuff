@@ -1,0 +1,1 @@
+python ./convert_fp8_scaled_stochastic.py --input PATH --output PATH --t5xxl OPTIONAL FLAG
